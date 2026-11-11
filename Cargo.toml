@@ -222,6 +222,10 @@ sha2 = "0.10"
 base64 = "0.22"
 dom_query = { version = "0.28.0", default-features = false }
 
+[[test]]
+name = "creation_activation"
+harness = false
+
 [lints.rust.unexpected_cfgs]
 level = "warn"
 check-cfg = ["cfg(linux)", "cfg(gtk)"]
